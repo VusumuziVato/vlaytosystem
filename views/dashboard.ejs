@@ -1,0 +1,49 @@
+
+<%- include('layout.ejs'); %>
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>Welcome back <%= user.name %> </h1> 
+        <h1> <%= user.role %> </h1> <br>
+    </div>
+</div>
+        <br><br><br>
+        <div class="form-group ">
+             <button type="submit" id = "probtn"  class="btn btn-primary btn-lg btn-block login-button">upload</button>
+        </div>
+        
+        <div class="form-group ">
+            <a href="/vlayto"> <button type="submit" id = "probtn"  class="btn btn-primary btn-lg btn-block login-button">vlayto</button> </a>
+        </div>
+
+        <div class="form-group ">
+            <a href="/artist"> <button type="submit" id = "artbtn" class="btn btn-primary btn-lg btn-block login-button">space</button> </a>
+        </div>
+       
+        <br><br><br>
+<div>
+    <a href="/login"> <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Logout</button> </a>
+</div>
+<style>
+    #container {
+     position: relative;
+     height: 100%;
+  }
+  #footer {
+     position: absolute;
+     bottom: 0;
+  }
+ </style>
+ 
+  <div id="container">
+
+    <div id="footer"><p>Online</p></div> &nbsp;
+    <p id="date"></p>
+ </div>
+
+    
+<script>
+document.getElementById("date").innerHTML = Date();
+
+</script>
+</body>
+</html>

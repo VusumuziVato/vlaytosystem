@@ -1,0 +1,38 @@
+<%- include('layout.ejs'); %>
+<div class="container">
+    <div class="row justify-content-center">
+    <h1> <%= user.name %>'s audio list'</h1>
+    <br><br>
+    </div>
+     </div>
+     <div class="row justify-content-center">
+        <p id="date"></p>
+        </div>
+
+
+
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+
+<div class="row justify-content-center">
+    <a href="/dashboard"> <button type="submit" class="btn btn-primary btn-lg btn-block login-button">back</button> </a>  &nbsp;
+    <br> 
+    <a href="/login"> <button type="submit" class="btn btn-primary btn-lg btn-block login-button">logout</button> </a> 
+</div>
+<style>
+    #container {
+     position: relative;
+     height: 100%;
+  }
+  #footer {
+     position: absolute;
+     bottom: 0;
+  }
+ </style>
+ 
+  <div id="container">
+
+    <div id="footer"><p>Online</p></div> &nbsp;
+    <p id="date"></p>
+ </div>
