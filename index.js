@@ -9,7 +9,7 @@ const {loginCheck} = require("./auth/passport");
 loginCheck(passport);
 
 // Mongo DB conncetion
-const database = "mongodb+srv://henryvato:qY1Z9llr6vUwOqNf@cluster0.fteh3.mongodb.net/vlay"
+const database = process.env.MONGOLAB_URI;
 mongoose.connect(database, {useUnifiedTopology: true, useNewUrlParser: true })
 .then(() => console.log('e don connect'))
 .catch(err => console.log(err));
@@ -32,7 +32,5 @@ app.use('/', require('./routes/login'));
 
 
 
-app.listen(4000, () => {
-	console.log('Server up at 4000')
-})
-
+app.listen(process.env.PORT || 4000) 
+ 
