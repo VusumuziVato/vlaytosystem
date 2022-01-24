@@ -1,24 +1,33 @@
-<%- include('layout.ejs'); %>
-<div class="container">
-    <div class="row justify-content-center">
-    <h1> Vlayto list'</h1>
-    <br><br>
-    </div>
-     </div>
-     <div class="row justify-content-center">
-        <p id="date"></p>
-        </div>
-
-
-
-<script>
-document.getElementById("date").innerHTML = Date();
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+   
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Year</th>
+          </tr>
+        </thead>
+        <tbody>
+     
+      </tbody>
+        
+      </table>
+</body>
+</html>
 
 <div class="row justify-content-center">
     <a href="/dashboard"> <button type="submit" class="btn btn-primary btn-lg btn-block login-button">back</button> </a>  &nbsp;
     <br> 
-    <a href="/login"> <button type="submit" class="btn btn-primary btn-lg btn-block login-button">logout</button> </a> 
 </div>
 <style>
     #container {
